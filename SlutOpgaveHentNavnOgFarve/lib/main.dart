@@ -85,7 +85,7 @@ class _FrontPageState extends State<FrontPage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => PickColor(),
+                    builder: (context) => PickColour(),
                   ),
                 );
               },

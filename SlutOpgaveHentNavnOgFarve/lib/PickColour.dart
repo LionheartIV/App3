@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:slutopgavehentnavnogfarve/AddMember.dart';
 
-class PickColor extends StatefulWidget {
+class PickColour extends StatefulWidget {
   @override
-  _PickColorState createState() => _PickColorState();
+  _PickColourState createState() => _PickColourState();
 }
 
-class _PickColorState extends State<PickColor> {
-  _PickColorState({this.color});
-  Color? color;
+class _PickColourState extends State<PickColour> {
+  _PickColourState({this.colour});
+  Color? colour;
 
   String? value1;
   String? value2;
@@ -49,7 +49,7 @@ class _PickColorState extends State<PickColor> {
                 height: 50,
                 width: double.infinity,
                 child: DecoratedBox(
-                  decoration: BoxDecoration(color: color),
+                  decoration: BoxDecoration(color: colour),
                 ),
               ),
             ),
@@ -77,8 +77,7 @@ class _PickColorState extends State<PickColor> {
               style: TextButton.styleFrom(backgroundColor: Colors.blueAccent),
               onPressed: () {
                 setState(() {
-                  color = Color(0xFF9010C0);
-
+                  colour = Color(0xFF9010C0);
 
                 });
               },
