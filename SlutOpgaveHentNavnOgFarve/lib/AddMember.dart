@@ -79,7 +79,7 @@ class _AddMemberState extends State<AddMember> {
               controller: nameController,
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                hintText: 'Ender a name',
+                hintText: 'Enter a name',
               ),
             ),
             TextButton(
