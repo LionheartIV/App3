@@ -1,4 +1,3 @@
-
 class Family {
   late String familyMemberType;
   late String familyMemberName;

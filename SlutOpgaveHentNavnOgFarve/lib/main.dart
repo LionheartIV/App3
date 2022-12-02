@@ -1,7 +1,3 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables
-
-// ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
 import 'package:slutopgavehentnavnogfarve/AddMember.dart';
 import 'package:slutopgavehentnavnogfarve/PickColour.dart';

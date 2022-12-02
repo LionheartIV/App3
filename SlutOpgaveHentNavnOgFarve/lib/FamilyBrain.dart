@@ -19,7 +19,7 @@ class FamilyBrain {
   }
 
   String getFamilyMemberType() {
-    _listItemNumber = _familyBank.length - 1;
+    _listItemNumber = _familyBank.length -1;
     if (_familyBank.isEmpty) {
       return 'Here comes the names';
     } else {
@@ -36,6 +36,6 @@ class FamilyBrain {
   }
 
   int returnListLength(){
-    return _familyBank.length-1;
+    return _familyBank.length - 1;
   }
 }

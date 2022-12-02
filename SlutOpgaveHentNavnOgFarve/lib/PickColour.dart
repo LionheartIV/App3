@@ -8,13 +8,16 @@ class PickColour extends StatefulWidget {
 
 class _PickColourState extends State<PickColour> {
   _PickColourState({this.colour});
-  Color? colour;
 
+  //HexColor createState() => HexColor(hexColor);
+  //Color getColor =  Color(HexColor._getColorFromHex(hexColor));
+
+  Color? colour;
   String? value1;
   String? value2;
   String? value3;
 
-  String? getColor;
+
 
   final items = ['00', '10', '20', '30', '40', 'A0', 'B0', 'C0', 'FF'];
 
@@ -78,7 +81,6 @@ class _PickColourState extends State<PickColour> {
               onPressed: () {
                 setState(() {
                   colour = Color(0xFF9010C0);
-
                 });
               },
               child: Text(
@@ -93,11 +95,12 @@ class _PickColourState extends State<PickColour> {
   }
 }
 
+
 class HexColor extends Color {
   static int _getColorFromHex(String hexColor) {
-    hexColor = hexColor.toUpperCase().replaceAll("#", "");
     if (hexColor.length == 6) {
-      hexColor = "FF$hexColor";
+      hexColor = "0xFF$hexColor";
+      //print(hexColor);
     }
     return int.parse(hexColor, radix: 16);
   }
